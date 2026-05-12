@@ -4,12 +4,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
+        <title>Rock Paper Scissors</title>
+        <style>
+            .row {
+                display: flex;
+                gap: 12px;
+                margin-bottom: 8px;
+            }
+        </style>
+        <script src="script.js" defer></script>
     </head>
 
     <body>
-        <script src="script.js"></script>
+        <div class="row">
+            <span id="computer-result">Computer: ?</span>
+        </div>
+        <div class="row">
+            <span id="human-result">Human: ?</span>
+        </div>
+        <div class="row">
+            <span id="result"></span>
+        </div>
+        <div class="row">
+            <span id="score">Human: 0 | PC: 0</span>
+        </div>
+        <div style="margin: 12px 0">
+            <button id="play">Play</button>
+        </div>
+        <div id="container"></div>
     </body>
 
 </html>
